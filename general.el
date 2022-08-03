@@ -17,3 +17,7 @@
 (setq default-major-mode 'text-mode)
 (add-hook 'text-mode-hook  'turn-on-auto-fill)
 (add-to-list 'load-path "~/.emacs.d/lisp/")
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 5)
+(defvaralias 'c-basic-offset 'tab-width)
+(defvaralias 'cperl-indent-level 'tab-width)

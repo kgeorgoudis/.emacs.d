@@ -1,4 +1,4 @@
-(load "~/.emacs.d/adjust.el")
+(load "~/.emacs.d/general.el")
 (load "~/.emacs.d/melpa.el")
 (load "~/.emacs.d/theme.el")
 (load "~/.emacs.d/bash.el")
