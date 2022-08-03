@@ -21,3 +21,4 @@
 (setq-default tab-width 5)
 (defvaralias 'c-basic-offset 'tab-width)
 (defvaralias 'cperl-indent-level 'tab-width)
+(global-set-key (kbd "<escape>") 'keyboard-escape-quit)
