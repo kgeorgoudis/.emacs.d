@@ -1,0 +1,7 @@
+(setq explicit-shell-file-name "/opt/homebrew/bin/bash")
+(setq-default shell-file-name "/opt/homebrew/bin/bash")
+(setq shell-file-name "bash")
+(setq explicit-bash-args '("--login" "--interactive"))
+(defun bash-shell-mode-setup ()
+  (setq-local comint-process-echoes t))
+(add-hook 'shell-mode-hook #'bash-shell-mode-setup)
