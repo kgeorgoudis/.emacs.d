@@ -9,6 +9,7 @@
                               (time-subtract after-init-time before-init-time)))
                      gcs-done)))
 (set-default-coding-systems 'utf-8)
+(add-hook 'window-setup-hook 'toggle-frame-maximized t)
 (setq inhibit-startup-message t
       visible-bell nil
       blink-cursor-mode nil
