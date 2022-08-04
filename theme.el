@@ -1,5 +1,5 @@
-(defvar efs/default-font-size 130)
-(defvar efs/default-variable-font-size 130)
+(defvar efs/default-font-size 120)
+(defvar efs/default-variable-font-size 120)
 
 (use-package all-the-icons)
 (use-package doom-modeline
