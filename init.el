@@ -11,3 +11,4 @@
 (load "~/.emacs.d/terraform.el")
 (load "~/.emacs.d/python.el")
 (load "~/.emacs.d/golang.el")
+(load "~/.emacs.d/flycheck.el")
