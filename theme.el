@@ -1,6 +1,3 @@
-(defvar efs/default-font-size 120)
-(defvar efs/default-variable-font-size 120)
-
 (use-package all-the-icons)
 (use-package doom-modeline
   :ensure t
@@ -26,6 +23,13 @@
 
 (use-package command-log-mode)
 
-(set-face-attribute 'default nil :font "SF Mono" :height efs/default-font-size)
-(set-face-attribute 'fixed-pitch nil :font "SF Mono" :height efs/default-font-size)
-(set-face-attribute 'variable-pitch nil :font "SF Pro" :height efs/default-font-size :weight 'regular)
+(set-face-attribute 'default nil
+                    :font "Fira Code" :height 120)
+(set-face-attribute 'fixed-pitch nil
+                    :font "Fira Mono"
+                    :weight 'light
+                    :height 160)
+(set-face-attribute 'variable-pitch nil
+                    :font "ETBembo"
+                    :height 160
+                    :weight 'light)
