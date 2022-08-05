@@ -24,12 +24,12 @@
 (use-package command-log-mode)
 
 (set-face-attribute 'default nil
-                    :font "Fira Code" :height 120)
+                    :font "Fira Code Retina" :height 120)
 (set-face-attribute 'fixed-pitch nil
-                    :font "Fira Mono"
+                    :font "Fira Code Retina"
                     :weight 'light
-                    :height 160)
+                    :height 140)
 (set-face-attribute 'variable-pitch nil
                     :font "ETBembo"
                     :height 160
-                    :weight 'light)
+                    :weight 'thin)
