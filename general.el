@@ -34,3 +34,10 @@
 (defvaralias 'c-basic-offset 'tab-width)
 (defvaralias 'cperl-indent-level 'tab-width)
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
+(setq ispell-program-name "/opt/homebrew/bin/aspell")
+(dolist (mode '(org-mode-hook
+		term-mode-hook
+		shell-mode-hook
+		vterm-mode-hook
+		eshell-mode-hook))
+  (add-hook mode (lambda () (display-line-numbers-mode 0))))
