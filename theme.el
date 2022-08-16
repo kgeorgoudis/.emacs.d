@@ -30,6 +30,6 @@
                     :weight 'light
                     :height 140)
 (set-face-attribute 'variable-pitch nil
-                    :font "ETBembo"
-                    :height 160
-                    :weight 'thin)
+                    :font "Cantarell"
+                    :height 140
+                    :weight 'regular)
