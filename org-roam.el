@@ -8,7 +8,7 @@
   (org-roam-capture-templates
    '(("d" "default" plain
       "Clusters: %?\nReferences: \n"
-      :if-new (file+head "${slug}.org" "#+title: ${title}\n#+created: %U\n")
+      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+created: %U\n")
       :unnarrowed t)))
   :bind (("C-c n l" . org-roam-buffer-toggle)
          ("C-c n f" . org-roam-node-find)
