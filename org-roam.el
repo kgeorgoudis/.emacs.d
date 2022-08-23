@@ -6,9 +6,15 @@
   (org-roam-directory (file-truename "~/Notes/"))
   (org-roam-completion-everywhere t)
   (org-roam-capture-templates
-   '(("d" "default" plain
-      "Clusters: %?\nReferences: \n"
+   '(("d" "default" plain "%?"
       :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+created: %U\n")
+      :unnarrowed t)
+     ("n" "note" plain
+      "Clusters: %?\nReferences: \n"
+      :if-new (file+head "main/%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+created: %U\n#+filetags: :notes:\n")
+      :unnarrowed t)
+     ("r" "reference" plain "%?"
+      :if-new (file+head "reference/%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+created: %U\n#+filetags: :references:\n")
       :unnarrowed t)))
   :bind (("C-c n l" . org-roam-buffer-toggle)
          ("C-c n f" . org-roam-node-find)
@@ -21,7 +27,6 @@
   :config
   (org-roam-setup)
   (org-roam-db-autosync-mode))
-
 
 (defun org-roam-node-insert-immediate (arg &rest args)
   (interactive "P")
