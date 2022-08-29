@@ -38,11 +38,17 @@
         org-edit-src-content-indentation 2
         org-hide-block-startup nil))
 
-(use-package org-bullets
-  :after org
-  :hook (org-mode . org-bullets-mode)
-  :custom
-  (org-bullets-bullet-list '("◉" "○" "●" "○" "●" "○" "●")))
+;;(use-package org-bullets
+;;  :after org
+;;  :hook (org-mode . org-bullets-mode)
+;;  :custom
+;;  (org-bullets-bullet-list '("◉" "○" "●" "○" "●" "○" "●")))
+
+(use-package org-superstar
+    :config
+    (setq org-superstar-special-todo-items t)
+    (add-hook 'org-mode-hook (lambda ()
+                               (org-superstar-mode 1))))
 
 (defun my/org-mode-visual-fill ()
   (setq visual-fill-column-width 140
