@@ -24,12 +24,13 @@
 (use-package command-log-mode)
 
 (set-face-attribute 'default nil
-                    :font "Fira Code Retina" :height 120)
+                    :font "DejaVu Sans Mono"
+                    :height 120)
 (set-face-attribute 'fixed-pitch nil
-                    :font "Fira Code Retina"
+                    :font "DejaVu Sans Mono"
                     :weight 'light
                     :height 140)
 (set-face-attribute 'variable-pitch nil
-                    :font "Cantarell"
+                    :font "DejaVu Sans Mono for Powerline Book"
                     :height 140
                     :weight 'regular)
