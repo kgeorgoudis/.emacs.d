@@ -34,6 +34,8 @@
 (defvaralias 'c-basic-offset 'tab-width)
 (defvaralias 'cperl-indent-level 'tab-width)
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
+(defalias 'yes-or-no-p 'y-or-n-p)
+(setq delete-by-moving-to-trash t)
 (setq ispell-program-name "/opt/homebrew/bin/aspell")
 (dolist (mode '(org-mode-hook
 		term-mode-hook
