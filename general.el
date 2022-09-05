@@ -9,6 +9,7 @@
                               (time-subtract after-init-time before-init-time)))
                      gcs-done)))
 (set-default-coding-systems 'utf-8)
+(server-start)
 (add-hook 'window-setup-hook 'toggle-frame-maximized t)
 (setq inhibit-startup-message t
       visible-bell nil
@@ -29,8 +30,8 @@
 (setq default-major-mode 'text-mode)
 (add-hook 'text-mode-hook  'turn-on-auto-fill)
 (add-to-list 'load-path "~/.emacs.d/lisp/")
+(setq-default tab-width 2)
 (setq-default indent-tabs-mode nil)
-(setq-default tab-width 5)
 (defvaralias 'c-basic-offset 'tab-width)
 (defvaralias 'cperl-indent-level 'tab-width)
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
