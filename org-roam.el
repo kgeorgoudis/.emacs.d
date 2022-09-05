@@ -26,10 +26,12 @@
          ("C-c n I" . org-roam-node-insert-immediate)
          ("C-c n c" . org-roam-capture)
          :map org-mode-map
+         ("C-M-i" . completion-at-point)
          ("C-c n j" . org-roam-dailies-capture-today))
   :config
   (org-roam-setup)
-  (org-roam-db-autosync-mode))
+  (org-roam-db-autosync-mode)
+  (add-hook 'org-roam-mode-hook #'turn-on-visual-line-mode))
 
 (defun org-roam-node-insert-immediate (arg &rest args)
   (interactive "P")
