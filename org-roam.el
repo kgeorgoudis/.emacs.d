@@ -7,7 +7,7 @@
   (org-roam-completion-everywhere t)
   (org-roam-capture-templates
    '(("d" "default" plain "%?"
-      :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n")
+      :if-new (file+head "main/%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+created: %U\n")
       :unnarrowed t)
      ("i" "inbox" plain "%?"
       :if-new (file+head "inbox/%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+created: %U\n")
