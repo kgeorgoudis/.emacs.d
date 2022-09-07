@@ -14,3 +14,4 @@
 (load "~/.emacs.d/python.el")
 (load "~/.emacs.d/golang.el")
 (load "~/.emacs.d/flycheck.el")
+(load "~/.emacs.d/autocompletion.el")
