@@ -2,9 +2,21 @@
 (use-package doom-modeline
   :ensure t
   :init (doom-modeline-mode 1))
+(setq doom-modeline-bar-width 4)
+(setq doom-modeline-buffer-file-name-style 'auto)
+(setq doom-modeline-icon t)
+(setq doom-modeline-major-mode-icon t)
+(setq doom-modeline-major-mode-color-icon t)
+(setq doom-modeline-buffer-state-icon t)
+(setq doom-modeline-time-icon t)
+(setq doom-modeline-buffer-encoding t)
+(setq doom-modeline-mu4e nil)
+;;(mu4e-alert-enable-mode-line-display)
+(setq doom-modeline-time t)
 
 (require 'doom-themes)
-(load-theme 'doom-dracula t)
+;;(load-theme 'doom-snazzy t)
+(load-theme 'doom-one-light t)
 
 (use-package rainbow-delimiters
   :hook (prog-mode . rainbow-delimiters-mode))
