@@ -8,7 +8,8 @@
               ("M-h" . backward-kill-word))
   :init
   :custom
-  (vertico-cycle t)
+  (vertico-cycle nil)
+  (vertico-resize nil)
   (vertico-mode +1))
 
 (use-package corfu
@@ -30,7 +31,10 @@
 (setq completion-ignore-case t)
 (setq read-file-name-completion-ignore-case t)
 
-(use-package consult)
+(use-package consult
+  :bind (("M-s f" . consult-find)
+         ("M-s g" . consult-git-grep)
+         ("M-s r" . consult-ripgrep)))
 
 (use-package orderless
   :init
